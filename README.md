@@ -33,7 +33,6 @@ click on form or adopt or add new pet, click on enter dark mode and toggle betwe
 
 # BRAND GUIDE
 ![brand guide screenshot]
-()
 
 # WIREFRAME
 ![wireframe screenshot]
