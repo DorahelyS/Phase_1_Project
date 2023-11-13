@@ -5,6 +5,7 @@ Phase 1 Project
 11/10/2023
 
 # DESCRIPTION
+
 Wingpetz is a website to help you find love on two legs... or four by parterning with local shelters to find the one!
 
 WingPetz is a platform that partners with local animal shelters to provide fosters with the human socialization that they need while also providing users with the cutest sidekick and icebreaker. Pets provide the perfect conversation starter while out and about. Users can use WingPetz to reserve specified time slots to take shelter animals out to local parks. After their time together, users may find that their perfect match was their furry friend. If this is the case, they can apply to adopt the animal.
@@ -32,8 +33,8 @@ click on form or adopt or add new pet, click on enter dark mode and toggle betwe
 
 
 # BRAND GUIDE
-![brand guide screenshot]
-()
+<img width="477" alt="Brand Story pt1" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/bdd88c8a-56a0-4c93-9205-fcfe64488dff">
+
 
 # WIREFRAME
 ![wireframe screenshot]
