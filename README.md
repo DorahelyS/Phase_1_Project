@@ -34,18 +34,13 @@ click on form or adopt or add new pet, click on enter dark mode and toggle betwe
 
 # BRAND GUIDE
 <img width="477" alt="Brand Story pt1" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/bdd88c8a-56a0-4c93-9205-fcfe64488dff">
-
 <img width="483" alt="Screen Shot 2023-11-13 at 12 05 35 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/db2cd7eb-efdf-4d6d-900f-53ac627deb41">
 
-
 # WIREFRAME
-![wireframe screenshot]
-
-
+<img width="260" alt="Screen Shot 2023-11-13 at 12 08 14 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/4dffcc4c-7b47-4a8c-aa53-c8a102b0c400">
 
 # TRELLO
 <img width="993" alt="Screen Shot 2023-11-13 at 12 07 13 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/b0ccab69-8688-45f7-999b-4a1d0078b842">
-
 
 # PUBLIC API
 // link here
