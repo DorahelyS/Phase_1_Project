@@ -26,14 +26,22 @@ WingPetz is a platform that partners with local animal shelters to provide foste
 	
 
 # MVP
-Search through a gallary of pets, display pet description,
+Search through a gallary of pets, hover over card to see pet name,
+flip card to display pet description, click on time slot buttonto reserve pet,
+click on form or adopt or add new pet, click on enter dark mode and toggle between both modes
+
+
+# BRAND GUIDE
+![brand guide screenshot]
+()
 
 # WIREFRAME
-![wireframe image]
+![wireframe screenshot]
 
 
 
 # TRELLO
+![trello screenshot]
 
 
 # PUBLIC API
