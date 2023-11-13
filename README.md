@@ -33,15 +33,14 @@ click on form or adopt or add new pet, click on enter dark mode and toggle betwe
 
 
 # BRAND GUIDE
-<img width="477" alt="Brand Story pt1" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/bdd88c8a-56a0-4c93-9205-fcfe64488dff">
-<img width="483" alt="Screen Shot 2023-11-13 at 12 05 35 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/db2cd7eb-efdf-4d6d-900f-53ac627deb41">
+<img width="477" alt="Brand Story pt1" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/c7139bff-3d17-49fd-aebe-e73cbfd11686">
+<img width="483" alt="Screen Shot 2023-11-13 at 12 05 35 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/dec5189c-7d56-4b77-b9df-f84d31602ac8">
 
 # WIREFRAME
-<img width="260" alt="Screen Shot 2023-11-13 at 12 08 14 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/fcb3e1c0-5a1f-4693-9259-84ac5036d681">
-
+<img width="260" alt="Screen Shot 2023-11-13 at 12 08 14 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/93849df1-30d6-486e-ae8d-520a81eb4b51">
 
 # TRELLO
-<img width="993" alt="Screen Shot 2023-11-13 at 12 07 13 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/b0ccab69-8688-45f7-999b-4a1d0078b842">
+<img width="993" alt="Screen Shot 2023-11-13 at 12 07 13 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/65b03c44-e723-48f4-ad03-1f64e9bd7dc2">
 
 # PUBLIC API
 // link here
