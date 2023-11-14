@@ -18,7 +18,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
 })
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
         fetch('https://api.petfinder.com/v2/animals?type=dog&page=2', {
             headers: {
                 'Authorization': `Bearer ${data.access_token}`
@@ -28,21 +28,4 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             .then(data => console.log(data))
     })
 
-    /*
-// -------- DO NOT USE!!! -------------
-fetch(url)
-.then((response) => {
-    return response.json()
-})
-.then((dogs) => {
-    return dogs.forEach(renderDog)
-})
 
-function renderDog(dog){
-    dogImage.src = dog.dogImage
-    dogImage.addEventListener("", (e) =>{
-
-    })
-
-}
-*/
