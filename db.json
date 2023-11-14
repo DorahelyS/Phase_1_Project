@@ -1,19 +1,49 @@
 {
-  "animals[0]": {
-    "image": "https://www.akc.org/wp-content/uploads/2018/07/Australian-Stumpy-Tail-Cattle-Dog-Slideshow-04.jpg"
-  },
-
-  "animals[1]": {
-    "image": ""
-  },
-
-  "animals[2]": {
-    "image": ""
-  },
-  "animals[3]": {
-    "image": ""
-  },
-  "animals[4]": {
-    "image": ""
-  }
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Koda",
+      "breed": "Terrier mix",
+      "age": "2",
+      "gender": "female",
+      "size": "medium",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Emma",
+      "breed": "Dachshund",
+      "age": "9",
+      "gender": "female",
+      "size": "small",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Kabo",
+      "breed": "Shiba",
+      "age": "3",
+      "gender": "male",
+      "comment": "large",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Sky",
+      "breed": "Border Collie",
+      "age": "10",
+      "gender": "female",
+      "comment": "large",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Candy",
+      "breed": "German Shepard",
+      "age": "4",
+      "gender": "female",
+      "comment": "small",
+      "image": "https://www.akc.org/wp-content/uploads/2018/07/Australian-Stumpy-Tail-Cattle-Dog-Slideshow-04.jpg"
+    }
+  ]
 }
