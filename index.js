@@ -17,14 +17,19 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
 })
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
         fetch('https://api.petfinder.com/v2/animals?type=dog&page=2', {
             headers: {
                 'Authorization': `Bearer ${data.access_token}`
             }
         })
             .then(res => res.json())
-            .then(dogs => console.log(dogs)) //dogs.forEach(renderDog))
-    })
+            .then(//animals => {
+//             animals.forEach(dogs => {
+//                 let dogImage = document.createElement('img')
 
-
+//                 dogImage.src = dogs.animals.image
+//                 dogImage.alt =
+//             })
+//         })
+// })
