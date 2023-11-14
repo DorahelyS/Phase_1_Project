@@ -3,17 +3,28 @@ html {
 }
 
 h1.multicolortext {
-    background-image: linear-gradient(to right, #FF99CC, #0099FF);
-    -webkit-background-clip: text;
     color: transparent;
-    background-size: 51.5%;
+    background-image:
+        linear-gradient(to right,
+            #FF99CC,
+            #fca3d0,
+            #44b3fd,
+            #0099FF);
+    ;
+    margin: auto;
+    width: 350px;
+    background-clip: unset;
+    -webkit-background-clip: text;
     font-size: 75px;
     font-family: 'Open Sans';
-    margin: 0;
-
+    text-align: center;
 }
 
 h1~p.header {
+    color: transparent;
+    background-color: white;
+    background-clip: unset;
+    -webkit-background-clip: text;
     font-size: medium;
     font-family: 'Montserrat';
 }
@@ -28,4 +39,9 @@ div.main-column {
     padding: 0.5%;
     padding-top: 10px;
     font-family: 'Montserrat';
+}
+
+button.left {
+    position: fixed;
+    top: 40px;
 }

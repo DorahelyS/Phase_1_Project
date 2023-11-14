@@ -24,5 +24,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             }
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(dogs => console.log(dogs)) //dogs.forEach(renderDog))
     })
+
+
