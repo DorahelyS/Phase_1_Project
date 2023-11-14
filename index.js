@@ -1,12 +1,5 @@
 //GROUP PROJECT
 
-<<<<<<< HEAD
-// save url to a var
-const apiLink = 
-=======
->>>>>>> 86ca3da6a1f205f1e3cc15e131ac27f1ab50691f
-
-
 
 fetch('https://api.petfinder.com/v2/oauth2/token', {
             method: 'POST',
