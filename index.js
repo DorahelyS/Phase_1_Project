@@ -1,7 +1,7 @@
 //GROUP PROJECT
 
 // save url to a var
-const apiLink = ''
+const apiLink = 
 
 fetch(apiLink)
 .then((response) => {

@@ -19,7 +19,8 @@ WingPetz is a platform that partners with local animal shelters to provide foste
         default.
 	•	The user can flip the cards to view more interesting facts about each animal.
 	•	The user can hover on a card to see name name pop up.
-    •   Submit event for adopting and new pet
+    •   Submit event  new pet
+    •   Stretch goal - submit event for adoption 
 	•	Stretch goal - user can click a button and enter dark mode.
 	•	Stretch goal - while in dark mode user can click a button that says revert. Onclick the page
         returns to normal mode.
