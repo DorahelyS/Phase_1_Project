@@ -1,7 +1,7 @@
 //GROUP PROJECT
 
 /* Constant variables */
-
+const dogImage = document.getElementById("image")
 
 
 fetch('https://api.petfinder.com/v2/oauth2/token', {
