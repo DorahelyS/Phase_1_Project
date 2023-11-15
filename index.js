@@ -77,7 +77,73 @@ newDogForm.addEventListener('submit', function (e) {
     const newDogImage = document.getElementById("dog-image").value
 
     // newDogInfo is our values from our form being created into an object and sent to the json 
+    // currently this info is not going anywhere. 
     const newDogInfo = {
         "newDogName": newDogName, "newDogImage": newDogImage, "newDogId": newDogId, "newDogBreed": newDogBreed, "newDogAge": newDogAge, "newDogGender": newDogGender, "newDogSize": newDogSize
     }
+
+//NOT NEEDED Post request to post a new dog to the webpage (API) using the suhmitted info: 
+
+//*Tevon, the last code was going to the JSON but we need it to go to the API.
+
+
+    // fetch(url, {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       // Other headers, if needed
+    //     },
+    //     body: JSON.stringify(data),
+    //   })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //       // Handle the response data
+    //     })
+    //     .catch(error => {
+    //       // Handle any errors
+    //     });
+    
+
+
+//     //Tevon's Post (line 85-110)
+//     // Simple fetch 
+//     fetch('http://localhost:3000/animals', {
+// // our post 
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+// //  newDogInfo  is being stringify and converted to plain text
+//         body: JSON.stringify(newDogInfo),
+
+
+
+//     })
+//     return (res.json())
+//     }
+//     newDogInfo("https://example.com/answer" {then((data) => {
+//   console.log(data))
+//     })
+//   console.log(data);
+  
+//   .then(res => res.json())
+//   .then(data => {}
+
+
+
+
+
+
+// console.log(data);
+
+
+//event listeners
+//eventlistener1: Submit listener (already done)
+
+//eventlistener2: key down listener for the dark mode button
+
+//eventlistener3: click listener for dialog box once dog info is submitted
+
+    })
+
 })
