@@ -2,7 +2,10 @@
 
 /* Constant variables */
 const animalList = document.getElementById("animal-list")
-const animalImgUrl = "http://localhost:3000/animals"
+const animalImgsUrl = "http://localhost:3000/animals"
+const newDogForm = document.getElementById("new-pet");
+const dogImage = document.getElementById("dog-image");
+
 
 fetch('https://api.petfinder.com/v2/oauth2/token', {
     method: 'POST',
@@ -35,41 +38,47 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             })
     })
 
-fetch(animalImgUrl)
-    .then(r => r.json)
-    .then(data => {
-        data.animals.forEach(renderImg)
-        // console.log(data)
-        // debugger
-    })
-function renderImg(image) {
-    // console.log(image)
-    let dogImage = document.createElement('img')
+// fetch(animalImgsUrl)
+//     .then(res => res.json())
+//     .then(data => {
+//         data.forEach(renderImg)
+//         // debugger
+//     })                                   //code for db.json images
+// function renderImg(image) {
+//     // console.log(image)
+//     const dogImage = document.createElement('img')
 
-    dogImage.src = ani
+//     dogImage.src = image.Url
 
-    animalList.append(dogImage)
-    // debugger
-}
+//     animalList.append(dogImage)
+//     debugger
+// }
 function renderAnimalInfo(animal) {
     const animalSpecies = document.createElement('li')
     const animalAge = document.createElement('li')
-
+    const animalImg = document.createElement('img')
 
     animalAge.textContent = "Age: " + animal.age
     animalSpecies.textContent = "Animal: " + animal.species
 
+    if (animal.photos.length > 0) {
+        animalImg.src = animal.photos[0].small
+        animalList.append(animalImg)
+    } else {
+        const noAnimalImage = document.createElement('img')
+        noAnimalImage.src = "https://st3.depositphotos.com/9494100/15431/i/450/depositphotos_154313516-stock-photo-pug-dog-with-yellow-constructor.jpg"
+        animalList.append(noAnimalImage)
+    }
     animalList.append(animalSpecies, animalAge)
+    // creating a node for the form
     // debugger
 }
+//if statement 
 
-// creating a node for the form
-const form = document.getElementById("new-pet");
-// creating a node for the image URL
-const DogPic = document.getElementById("dog-image");
+
 
 //creating a submit event using the form node, also added error catching.
-form.addEventListener('submit', function (e) {
+newDogForm.addEventListener('submit', function (e) {
     //prevent form from actually reloading the page or redirecting
     e.preventDefault();
     // this name will hold the Id key that will be returned when form is submitted
@@ -88,8 +97,8 @@ form.addEventListener('submit', function (e) {
     const newDogImage = document.getElementById("dog-image").value
 
     // payload is our values from our form being created into an object and sent to the json 
-    const payload = {
-        "newDogName": newDogName, "newDogImage": newDogImage, "newDogId": newDogId
+    const newDogInfo = {
+        "newDogName": newDogName, "newDogImage": newDogImage, "newDogId": newDogId, "newDogBreed": newDogBreed, "newDogAge": newDogAge, "newDogGender": newDogGender, "newDogSize": newDogSize
     };
     // Simple fetch 
     fetch('http://localhost:3000/animals', {
@@ -99,11 +108,11 @@ form.addEventListener('submit', function (e) {
             "Content-Type": "application/json"
         },
         // payload  is being stringify and converted to plain text
-        body: JSON.stringify(payload),
+        body: JSON.stringify(newDogInfo),
 
     })
         .then(res => res.json())
-        .then(data => console.log(payload))
+        .then(data => console.log(newDogInfo))
 
     console.log(data)
 })
