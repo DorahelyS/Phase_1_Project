@@ -26,7 +26,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             .then(res => res.json())
             .then(animals => {
                 animals.animals.forEach(animal => {
-                    // console.log(animal)
+                    console.log(animal)
                     renderAnimalInfo(animal)
                     // debugger
 
@@ -35,34 +35,35 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             })
     })
 
-fetch(animalImgUrl)
-    .then(r => r.json)
-    .then(data => {
-        data.animals.forEach(renderImg)
-        // console.log(data)
-        // debugger
-    })
-function renderImg(image) {
-    // console.log(image)
-    let dogImage = document.createElement('img')
-
-    dogImage.src = ani
-
-    animalList.append(dogImage)
-    // debugger
-}
 function renderAnimalInfo(animal) {
-    const animalSpecies = document.createElement('li')
+    //const animalSpecies = document.createElement('li')
     const animalAge = document.createElement('li')
+    const animalName = document.createElement('li')
+    const animalBreed = document.createElement('li')
+    const animalGender = document.createElement('li')
+    const animalSize = document.createElement('li')
+    const animalImg = document.createElement('img')
 
 
     animalAge.textContent = "Age: " + animal.age
-    animalSpecies.textContent = "Animal: " + animal.species
+    //animalSpecies.textContent = "Animal: " + animal.species
+    animalName.textContent = "Name: " + animal.name
+    animalBreed.textContent = "Breed: " + animal.breeds.primary
+    animalGender.textContent = "Gender: " + animal.gender
+    animalSize.textcContent = "Size: " + animal.size
+    
+    if(animal.photos.length > 0 ){
+      animalImg.src = animal.photos[0].small  
+      animalList.append(animalImg)
 
-    animalList.append(animalSpecies, animalAge)
+   // }else{
+        //animalList.innerHTML += "No Photo"
+    //}
+
+   animalList.append(animalName, animalBreed, animalAge, animalGender, animalSize)
     // debugger
 }
-
+}
 // creating a node for the form
 const form = document.getElementById("new-pet");
 // creating a node for the image URL
