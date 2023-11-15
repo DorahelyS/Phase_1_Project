@@ -1,7 +1,7 @@
 //GROUP PROJECT
 
 /* Constant variables */
-const dogImage = document.getElementById("image")
+const animalList = document.getElementById("animal-list")
 
 
 fetch('https://api.petfinder.com/v2/oauth2/token', {
@@ -24,12 +24,23 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             }
         })
             .then(res => res.json())
-            .then(//animals => {
-//             animals.forEach(dogs => {
-//                 let dogImage = document.createElement('img')
+            .then(animals => {
+//                 animals.animals.forEach(animal => {
+//                     // console.log(animal)
+//                     renderAnimalInfo(animal)
+//                     debugger
+//                 })
 
-//                 dogImage.src = dogs.animals.image
-//                 dogImage.alt =
 //             })
-//         })
-// })
+//     })
+
+// function renderAnimalInfo(animal) {
+//     const animalSpecies = document.createElement('li')
+//     const animalImage = document.createElement('img')
+
+//     animalImage.src =
+//         animalSpecies.textContent = animal.species
+
+//     animalList.append(animalSpecies)
+//     debugger
+// }
