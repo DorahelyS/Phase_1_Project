@@ -1,7 +1,6 @@
 //GROUP PROJECT
 
 /* Constant variables */
-const url = " http://localhost:3000/dogs"
 const animalList = document.getElementById("animal-list")
 
 
@@ -25,24 +24,26 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             }
         })
             .then(res => res.json())
-            .then(animals =>; //{
-//                 animals.animals.forEach(animal => {
-//                     // console.log(animal)
-//                     renderAnimalInfo(animal)
-//                     debugger
-//                 })
+        //             .then(animals => {
+        //                 animals.animals.forEach(animal => {
+        //                     // console.log(animal)
+        //                     renderAnimalInfo(animal)
+        //                     debugger
 
-//             })
-//     })
+        //                 })
 
-// function renderAnimalInfo(animal) {
-//     const animalSpecies = document.createElement('li')
-//     const animalImage = document.createElement('img')
+        //             })
+        //     })
 
-//     animalImage.src =
-//         animalSpecies.textContent = animal.species
+        // function renderAnimalInfo(animal) {
+        //     const animalSpecies = document.createElement('li')
+        //     const animalAge = document.createElement('li')
+        //     const animalImage = document.createElement('img')
 
-//     animalList.append(animalSpecies)
-//     debugger
-//     })
-//   })
+        //     animalImage.src = ""
+        //     animalAge.textContent = "Age: " + animal.age
+        //     animalSpecies.textContent = "Animal: " + animal.species
+
+        //     animalList.append(animalSpecies, animalAge, animalImage)
+        //     debugger
+    }

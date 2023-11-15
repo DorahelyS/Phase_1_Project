@@ -1,112 +1,104 @@
-{ 
-"animals": [
- 
 {
-    "id":"",
-    "Url": "https://www.raisedrightpets.com/wp-content/uploads/2022/09/shutterstock_2139376785-1.jpg.webp",
-    "comment": ""
-  },
-
- {
-    "id":"",
-    "Url": "",
-    "comment": "https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-164855910-1-e1694532950609.jpg"
-  },
-
-  {
-    "id":"",
-    "Url": "",
-    "comment": "https://cdn.shopify.com/s/files/1/0140/9096/0953/files/friendsofwilliamwalker_BorderCollie1zu1.jpg?v=1627986293"
-  },
-  {
-    "id":"",
-    "Url": "https://cdn.britannica.com/13/234213-050-45F47984/dachshund-dog.jpg",
-    "comment": ""
-  },
-  {
-    "id":"",
-    "Url": "https://cdn.britannica.com/55/164255-159-DDB8A459/litter-Australian-Shepherd-puppies.jpg",
-    "comment": ""
-  },
-  {
-    "id":"",
-    "Url": "https://cdn.britannica.com/11/234211-050-2D351D3C/American-pit-bull-terrier.jpg",
-    "comment": ""
-  },
-  {
-    "id":"",
-    "Url": "https://www.thesprucepets.com/thmb/F7GRqYpk6MxhSY4_Z0wez2D-fbk=/2747x0/filters:no_upscale():strip_icc()/GettyImages-1271982517-1d787fea648b409c93f08b696ff2ba20.jpg",
-    "comment": ""
-  },
-  {
-    "id":"",
-    "Url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Champion_Charlie_Muscles_%282%29.jpg/640px-Champion_Charlie_Muscles_%282%29.jpg",
-    "comment": ""
-  },
-  {
-    "id":"",
-    "Url": "https://www.akc.org/wp-content/uploads/2017/11/Border-Collie-puppy1.jpg",
-    "comment": ""
-  },
-  {
-    "id":"",
-    "Url": "https://post.bark.co/wp-content/uploads/2019/09/black-mouth-cur-overview.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/labrador-retriever-dog-breed-info.jpeg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://www.hudsonanimalhospitalnyc.com/sites/default/files/styles/large/public/shih-tzu-dog-breed-info.jpg?itok=d1Mhwy8m",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Full_attention_%288067543690%29.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://www.thesprucepets.com/thmb/BYRaJ0W7KW3ez8nfiFS14kt7FJo=/1500x0/filters:no_upscale():strip_icc()/GettyImages-977898246-1942d4364fa64bd2ba792a86f4f24715.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/American_Pitbull_Terrier_-_Colby_Line.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://www.hypropremium.com.au/wp-content/uploads/2023/01/Jack-Russel.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://assets.orvis.com/is/image/orvisprd/AdobeStock_25245434?wid=1023&src=is($object$:7-3)",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://www.pawsatlanta.org/assets/stitch_2_r6ZkNNW.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://www.thesprucepets.com/thmb/rcRE0H_N52NXRim6kNoMnKIt30k=/2123x0/filters:no_upscale():strip_icc()/Samoyed-d78c4bb2c56b4c2ab004dc421441fb10.jpg",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg?w=400&h=300&c=crop",
-    "comment": ""
-  },
-   {
-    "id":"",
-    "Url": "",
-    "comment": ""
-  }
-]
+  "animals": [
+    {
+      "id": "",
+      "Url": "https://www.raisedrightpets.com/wp-content/uploads/2022/09/shutterstock_2139376785-1.jpg.webp",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "",
+      "comment": "https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-164855910-1-e1694532950609.jpg"
+    },
+    {
+      "id": "",
+      "Url": "",
+      "comment": "https://cdn.shopify.com/s/files/1/0140/9096/0953/files/friendsofwilliamwalker_BorderCollie1zu1.jpg?v=1627986293"
+    },
+    {
+      "id": "",
+      "Url": "https://cdn.britannica.com/13/234213-050-45F47984/dachshund-dog.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://cdn.britannica.com/55/164255-159-DDB8A459/litter-Australian-Shepherd-puppies.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://cdn.britannica.com/11/234211-050-2D351D3C/American-pit-bull-terrier.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.thesprucepets.com/thmb/F7GRqYpk6MxhSY4_Z0wez2D-fbk=/2747x0/filters:no_upscale():strip_icc()/GettyImages-1271982517-1d787fea648b409c93f08b696ff2ba20.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Champion_Charlie_Muscles_%282%29.jpg/640px-Champion_Charlie_Muscles_%282%29.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.akc.org/wp-content/uploads/2017/11/Border-Collie-puppy1.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://post.bark.co/wp-content/uploads/2019/09/black-mouth-cur-overview.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/labrador-retriever-dog-breed-info.jpeg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.hudsonanimalhospitalnyc.com/sites/default/files/styles/large/public/shih-tzu-dog-breed-info.jpg?itok=d1Mhwy8m",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Full_attention_%288067543690%29.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.thesprucepets.com/thmb/BYRaJ0W7KW3ez8nfiFS14kt7FJo=/1500x0/filters:no_upscale():strip_icc()/GettyImages-977898246-1942d4364fa64bd2ba792a86f4f24715.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/American_Pitbull_Terrier_-_Colby_Line.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.hypropremium.com.au/wp-content/uploads/2023/01/Jack-Russel.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://assets.orvis.com/is/image/orvisprd/AdobeStock_25245434?wid=1023&src=is($object$:7-3)",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.pawsatlanta.org/assets/stitch_2_r6ZkNNW.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://www.thesprucepets.com/thmb/rcRE0H_N52NXRim6kNoMnKIt30k=/2123x0/filters:no_upscale():strip_icc()/Samoyed-d78c4bb2c56b4c2ab004dc421441fb10.jpg",
+      "comment": ""
+    },
+    {
+      "id": "",
+      "Url": "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg?w=400&h=300&c=crop",
+      "comment": ""
+    }
+  ]
 }
