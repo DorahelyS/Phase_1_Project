@@ -1,6 +1,7 @@
 //GROUP PROJECT
 
 /* Constant variables */
+const url = " http://localhost:3000/dogs"
 const animalList = document.getElementById("animal-list")
 
 
@@ -24,7 +25,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             }
         })
             .then(res => res.json())
-            .then(animals => {
+            .then(animals =>; //{
 //                 animals.animals.forEach(animal => {
 //                     // console.log(animal)
 //                     renderAnimalInfo(animal)
@@ -43,4 +44,5 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
 
 //     animalList.append(animalSpecies)
 //     debugger
-// }
+//     })
+//   })
