@@ -24,29 +24,30 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             }
         })
             .then(res => res.json())
-        //             .then(animals => {
-        //                 animals.animals.forEach(animal => {
-        //                     // console.log(animal)
-        //                     renderAnimalInfo(animal)
-        //                     debugger
+            .then(animals => {
+                animals.animals.forEach(animal => {
+                    // console.log(animal)
+                    renderAnimalInfo(animal)
+                    debugger
 
-        //                 })
+                })
 
-        //             })
-        //     })
+            })
+    })
 
-        // function renderAnimalInfo(animal) {
-        //     const animalSpecies = document.createElement('li')
-        //     const animalAge = document.createElement('li')
-        //     const animalImage = document.createElement('img')
+function renderAnimalInfo(animal) {
+    const animalSpecies = document.createElement('li')
+    const animalAge = document.createElement('li')
+    const animalImage = document.createElement('img')
 
-        //     animalImage.src = ""
-        //     animalAge.textContent = "Age: " + animal.age
-        //     animalSpecies.textContent = "Animal: " + animal.species
+    animalImage.src = ""
+    animalAge.textContent = "Age: " + animal.age
+    animalSpecies.textContent = "Animal: " + animal.species
 
-        //     animalList.append(animalSpecies, animalAge, animalImage)
-        //     debugger
-    }
+    animalList.append(animalSpecies, animalAge, animalImage)
+    debugger
+}
+
 // creating a node for the form
 const form = document.getElementById("form1");
 // creating a node for the image URL
