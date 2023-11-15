@@ -1,11 +1,9 @@
 //GROUP PROJECT
-
 /* Constant variables */
 const animalList = document.getElementById("animal-list")
 const animalImgsUrl = "http://localhost:3000/animals"
 const newDogForm = document.getElementById("new-pet");
 const dogImage = document.getElementById("dog-image");
-
 
 fetch('https://api.petfinder.com/v2/oauth2/token', {
     method: 'POST',
@@ -21,7 +19,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
     .then(res => res.json())
     .then(data => {
         // console.log(data)
-        fetch('https://api.petfinder.com/v2/animals?type=dog&page=2', {
+        fetch('https://api.petfinder.com/v2/animals?type=dog&page=2&limit=40', {
             headers: {
                 'Authorization': `Bearer ${data.access_token}`
             }
@@ -29,61 +27,43 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
             .then(res => res.json())
             .then(animals => {
                 animals.animals.forEach(animal => {
-                    // console.log(animal)
+                    console.log(animal)
                     renderAnimalInfo(animal)
                     // debugger
-
                 })
-
             })
     })
 
-// fetch(animalImgsUrl)
-//     .then(res => res.json())
-//     .then(data => {
-//         data.forEach(renderImg)
-//         // debugger
-//     })                                   //code for db.json images
-// function renderImg(image) {
-//     // console.log(image)
-//     const dogImage = document.createElement('img')
-
-//     dogImage.src = image.Url
-
-//     animalList.append(dogImage)
-//     debugger
-// }
 function renderAnimalInfo(animal) {
-    const animalSpecies = document.createElement('li')
     const animalAge = document.createElement('li')
+    const animalName = document.createElement('li')
+    const animalBreed = document.createElement('li')
+    const animalGender = document.createElement('li')
+    const animalSize = document.createElement('li')
     const animalImg = document.createElement('img')
 
     animalAge.textContent = "Age: " + animal.age
-    animalSpecies.textContent = "Animal: " + animal.species
+    animalName.textContent = "Name: " + animal.name
+    animalBreed.textContent = "Breed: " + animal.breeds.primary
+    animalGender.textContent = "Gender: " + animal.gender
+    animalSize.textContent = "Size: " + animal.size
 
     if (animal.photos.length > 0) {
         animalImg.src = animal.photos[0].small
         animalList.append(animalImg)
+        //only displaying photos with images?
+        animalList.append(animalName, animalBreed, animalAge, animalGender, animalSize)
     } else {
-        const noAnimalImage = document.createElement('img')
-        noAnimalImage.src = "https://st3.depositphotos.com/9494100/15431/i/450/depositphotos_154313516-stock-photo-pug-dog-with-yellow-constructor.jpg"
-        animalList.append(noAnimalImage)
+
     }
-    animalList.append(animalSpecies, animalAge)
-    // creating a node for the form
-    // debugger
 }
-//if statement 
-
-
-
 //creating a submit event using the form node, also added error catching.
 newDogForm.addEventListener('submit', function (e) {
     //prevent form from actually reloading the page or redirecting
     e.preventDefault();
     // this name will hold the Id key that will be returned when form is submitted
     const newDogId = document.getElementById("dog-id").value
-    // this node will hold the value of Dname when form is submitted
+    // this node will hold the value of dog name when form is submitted
     const newDogName = document.getElementById("dog-name").value
     //this node will hold the value of the dog breed
     const newDogBreed = document.getElementById("dog-breed").value
@@ -93,28 +73,11 @@ newDogForm.addEventListener('submit', function (e) {
     const newDogGender = document.getElementById("dog-gender").value
     //this node will hold the value of the dog size
     const newDogSize = document.getElementById("dog.size").value
-    // this node will hold the Pic URL value when submitted
+    // this node will hold the img URL value when submitted
     const newDogImage = document.getElementById("dog-image").value
 
-    // payload is our values from our form being created into an object and sent to the json 
+    // newDogInfo is our values from our form being created into an object and sent to the json 
     const newDogInfo = {
         "newDogName": newDogName, "newDogImage": newDogImage, "newDogId": newDogId, "newDogBreed": newDogBreed, "newDogAge": newDogAge, "newDogGender": newDogGender, "newDogSize": newDogSize
-    };
-    // Simple fetch 
-    fetch('http://localhost:3000/animals', {
-        // our post 
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        // payload  is being stringify and converted to plain text
-        body: JSON.stringify(newDogInfo),
-
-    })
-        .then(res => res.json())
-        .then(data => console.log(newDogInfo))
-
-    console.log(data)
+    }
 })
-// This process is successful if there is not console error
-// .catch(err => console.log(err));
