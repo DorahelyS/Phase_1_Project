@@ -16,8 +16,8 @@ WingPetz is a platform that partners with local animal shelters to provide foste
 	•	Once the page loads, the user can view each animal redendered to the webapge from the public API
 	•	The user can mouseover an image to see adopt me image
  	•	The user can mouseout adopt me image to revert back to dog image
-    	•   	Submit event new pet
-    	•   	Stretch goal - submit event for adoption 
+    •   Submit event new pet
+    •   Stretch goal - submit event for adoption 
 	•	Stretch goal - user can click a button and enter dark mode
 	•	Stretch goal - while in dark mode user can click a button that says revert. Onclick the page returns to normal mode
 	
