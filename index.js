@@ -46,10 +46,21 @@ function renderAnimalInfo(animal) {
   animalGender.textContent = "Gender: " + animal.gender
   animalSize.textContent = "Size: " + animal.size
 
+
   if (animal.photos.length > 0) {
     animalImg.src = animal.photos[0].small
     animalList.append(animalImg)
     animalList.append(animalName, animalBreed, animalAge, animalGender, animalSize)
+
+    /*
+    ///testing event listener
+    // Adding mouseover event listener to the image
+    animalImg.addEventListener('mouseover', function () {
+      // Your mouseover event handler code here
+      console.log('Mouseover event triggered!')
+      // You can add any additional actions you want to perform on mouseover
+    })
+    */
   }
 }
 
@@ -74,7 +85,7 @@ newDogForm.addEventListener('submit', function (e) {
   newDogForm.reset();
 
 
-
+  //Don't need POST REQUEST FOR PHASE-1 PROJECT
   // Fetch request to post a new dog to the webpage (API) using the submitted info:
   // You can uncomment and modify this code according to your needs
   // fetch(url, {
