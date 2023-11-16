@@ -26,7 +26,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
       .then(res => res.json())
       .then(animals => {
         animals.animals.forEach(animal => {
-          console.log(animal)
+          //console.log(animal)
           renderAnimalInfo(animal)
         })
       })
@@ -50,8 +50,22 @@ function renderAnimalInfo(animal) {
     animalImg.src = animal.photos[0].small
     animalList.append(animalImg)
     animalList.append(animalName, animalBreed, animalAge, animalGender, animalSize)
-  }
+  
+
+    //mouseover event for animal Images (remember to change image)
+animalImg.addEventListener('mouseover', () => {
+    animalImg.src = "src/Photos/adopt image.png";
+    console.log('event successful')
+
+    })} 
+
+    //mouseout event for animal images
+animalImg.addEventListener('mouseout', () => {
+    animalImg.src = animal.photos[0].small
+    })
+
 }
+
 
 newDogForm.addEventListener('submit', function (e) {
   e.preventDefault();
