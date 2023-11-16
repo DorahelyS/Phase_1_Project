@@ -87,6 +87,16 @@ newDogForm.addEventListener('submit', function (e) {
   //resets form once you hit submit info
   newDogForm.reset();
 
+  //light/dark toggle function
+ function lightDarkMode() {
+    let button = document.getElementsByClassName('dark-mode')
+
+    button.addEventListener('click', () => {
+        // button.lightDark.toggle('dark-mode')
+        console.log("i was clicked")
+    })
+   
+  }
 
 
   // Fetch request to post a new dog to the webpage (API) using the submitted info:
