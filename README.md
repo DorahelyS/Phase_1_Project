@@ -34,12 +34,8 @@ click on form or adopt or add new pet, click on enter dark mode and toggle betwe
 
 
 # BRAND GUIDE
-<<<<<<< HEAD
-![brand guide screenshot]
-=======
 <img width="477" alt="Brand Story pt1" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/c7139bff-3d17-49fd-aebe-e73cbfd11686">
 <img width="483" alt="Screen Shot 2023-11-13 at 12 05 35 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/dec5189c-7d56-4b77-b9df-f84d31602ac8">
->>>>>>> 86ca3da6a1f205f1e3cc15e131ac27f1ab50691f
 
 # WIREFRAME
 <img width="260" alt="Screen Shot 2023-11-13 at 12 08 14 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/93849df1-30d6-486e-ae8d-520a81eb4b51">
