@@ -39,8 +39,8 @@ click on form or adopt or add new pet, click on enter dark mode and toggle betwe
 <img width="993" alt="Screen Shot 2023-11-13 at 12 07 13 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/65b03c44-e723-48f4-ad03-1f64e9bd7dc2">
 
 # PUBLIC API
-// link here
-// example of objects here 
+<img width="1227" alt="Screen Shot 2023-11-16 at 4 43 00 PM" src="https://github.com/DorahelyS/Phase_1_Project/assets/142290529/5949055b-d35d-4f94-85da-b2594e5ea329">
+
 
 
 
