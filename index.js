@@ -29,7 +29,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
       .then(res => res.json())
       .then(animals => {
         animals.animals.forEach(animal => {
-          //console.log(animal)
+          console.log(animal)
           renderAnimalInfo(animal)
         })
       })
@@ -91,17 +91,17 @@ newDogForm.addEventListener('submit', function (e) {
   //resets form once you hit submit info
   newDogForm.reset();
 
-  //light/dark toggle function
- function lightDarkMode() {
-    let button = document.getElementsByClassName('dark-mode')
+/*
+  const darkModeButton = document.getElementById('dark-mode')
+  const mainColumn = document.querySelector('.main-column')
 
-    button.addEventListener('click', () => {
-        // button.lightDark.toggle('dark-mode')
-        console.log("i was clicked")
-    })
-   
-  }
+  darkModeButton.addEventListener('click', function () {
+  // Toggle the dark mode class on the main column
+  mainColumn.classList.toggle('dark-mode')
 
+})
+*/
+})
   //Don't need POST REQUEST FOR PHASE-1 PROJECT
   // Fetch request to post a new dog to the webpage (API) using the submitted info:
   // You can uncomment and modify this code according to your needs
@@ -120,8 +120,6 @@ newDogForm.addEventListener('submit', function (e) {
   //     .catch(error => {
   //       // Handle any errors
   //     });
-});
-
 
 //     // Simple fetch 
 //     fetch('http://localhost:3000/animals', {
@@ -160,4 +158,4 @@ newDogForm.addEventListener('submit', function (e) {
 //eventlistener2: key down listener for the dark mode button
 
 //eventlistener3: click listener for dialog box once dog info is submitted
->>>>>>> e9d7e1e8cb7838bf9005077c38ad3218899f0598
+
