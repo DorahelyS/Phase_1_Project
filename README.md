@@ -13,18 +13,13 @@ WingPetz is a platform that partners with local animal shelters to provide foste
 
 # USER EXPERIENCE
 
-	•	The user can submit a form and the data is persisted in the database via JSON.
-	•	The user can view each animal from the database rendered on the webpage / on Dom-loaded
-        the picture and information will be rendered first.
-	•	Persisted data is also updated and added to the webpage via POST with submit form / prevent
-        default.
-	•	The user can flip the cards to view more interesting facts about each animal.
-	•	The user can hover on a card to see name name pop up.
-    •   Submit event  new pet
-    •   Stretch goal - submit event for adoption 
+	•	Once the page loads, the user can view each animal redendered to the webapge from the public API.
+	•	The user can mouseover an image to see adopt me image 
+ 	•	The user can mouseout adopt me image to revert back to dog image
+    	•   	Submit event new pet
+    	•   	Stretch goal - submit event for adoption 
 	•	Stretch goal - user can click a button and enter dark mode.
-	•	Stretch goal - while in dark mode user can click a button that says revert. Onclick the page
-        returns to normal mode.
+	•	Stretch goal - while in dark mode user can click a button that says revert. Onclick the page returns to normal mode.
 	
 
 # MVP
