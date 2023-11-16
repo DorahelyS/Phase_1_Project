@@ -16,6 +16,9 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
     'content-type': 'application/json'
   }
 })
+
+    
+
   .then(res => res.json())
   .then(data => {
     fetch('https://api.petfinder.com/v2/animals?type=dog&page=2&limit=40', {
@@ -45,6 +48,7 @@ function renderAnimalInfo(animal) {
   animalBreed.textContent = "Breed: " + animal.breeds.primary
   animalGender.textContent = "Gender: " + animal.gender
   animalSize.textContent = "Size: " + animal.size
+
 
   if (animal.photos.length > 0) {
     animalImg.src = animal.photos[0].small
@@ -98,7 +102,7 @@ newDogForm.addEventListener('submit', function (e) {
    
   }
 
-
+  //Don't need POST REQUEST FOR PHASE-1 PROJECT
   // Fetch request to post a new dog to the webpage (API) using the submitted info:
   // You can uncomment and modify this code according to your needs
   // fetch(url, {
@@ -156,3 +160,4 @@ newDogForm.addEventListener('submit', function (e) {
 //eventlistener2: key down listener for the dark mode button
 
 //eventlistener3: click listener for dialog box once dog info is submitted
+>>>>>>> e9d7e1e8cb7838bf9005077c38ad3218899f0598
