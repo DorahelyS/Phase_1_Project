@@ -86,7 +86,7 @@ newDogForm.addEventListener('submit', function (e) {
   }
 
   //dialogue box when you submit your dogs info
-  window.alert("Thank you for submitting your dog's info!");
+  window.alert("Thank you for submitting your info!");
 
   //resets form once you hit submit info
   newDogForm.reset();
