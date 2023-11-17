@@ -60,3 +60,12 @@ ul {
     padding-left: 1px;
     padding-right: 1px;
 }
+
+img#headerImage {
+    max-width: 100%;
+    height: auto;
+    padding-right: 1px;
+    padding-left: 1px;
+    margin: 1px;
+    border: 1px;
+}

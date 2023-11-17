@@ -58,7 +58,7 @@ function renderAnimalInfo(animal) {
 
     //mouseover event for animal Images (remember to change image)
 animalImg.addEventListener('mouseover', () => {
-    animalImg.src = "src/Photos/adopt image.png";
+    animalImg.src = "src/Photos/Adopt Me button.png";
     // console.log('event successful')
 
     })} 
@@ -160,4 +160,3 @@ newDogForm.addEventListener('submit', function (e) {
 //eventlistener2: key down listener for the dark mode button
 
 //eventlistener3: click listener for dialog box once dog info is submitted
-
