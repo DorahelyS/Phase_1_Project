@@ -58,7 +58,7 @@ function renderAnimalInfo(animal) {
 
     //mouseover event for animal Images (remember to change image)
 animalImg.addEventListener('mouseover', () => {
-    animalImg.src = "src/Photos/adopt image.png";
+    animalImg.src = "src/Photos/Adopt Me button.png";
     // console.log('event successful')
 
     })} 
@@ -91,68 +91,8 @@ newDogForm.addEventListener('submit', function (e) {
   //resets form once you hit submit info
   newDogForm.reset();
 
-  //light/dark toggle function
-//  function lightDarkMode() {
-//     let button = document.getElementsByClassName('dark-mode')
+});
 
-//     button.addEventListener('click', () => {
-//         // button.lightDark.toggle('dark-mode')
-//         console.log("i was clicked")
-//     })
-   
-//   }
-
-})
-
-
-  //Don't need POST REQUEST FOR PHASE-1 PROJECT
-  // Fetch request to post a new dog to the webpage (API) using the submitted info:
-  // You can uncomment and modify this code according to your needs
-  // fetch(url, {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       // Other headers, if needed
-  //     },
-  //     body: JSON.stringify(newDogInfo),
-  //   })
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       // Handle the response data
-  //     })
-  //     .catch(error => {
-  //       // Handle any errors
-  //     });
-
-//     // Simple fetch 
-//     fetch('http://localhost:3000/animals', {
-// // our post 
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json"
-//         },
-// //  newDogInfo  is being stringify and converted to plain text
-//         body: JSON.stringify(newDogInfo),
-
-
-
-//     })
-//     return (res.json())
-//     }
-//     newDogInfo("https://example.com/answer" {then((data) => {
-//   console.log(data))
-//     })
-//   console.log(data);
-  
-//   .then(res => res.json())
-//   .then(data => {}
-
-
-
-
-
-
-// console.log(data);
 
 
 //event listeners
@@ -161,4 +101,3 @@ newDogForm.addEventListener('submit', function (e) {
 //eventlistener2: key down listener for the dark mode button
 
 //eventlistener3: click listener for dialog box once dog info is submitted
-
