@@ -36,11 +36,11 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
   })
 
 function renderAnimalInfo(animal) {
-  const animalAge = document.createElement('li')
-  const animalName = document.createElement('li')
-  const animalBreed = document.createElement('li')
-  const animalGender = document.createElement('li')
-  const animalSize = document.createElement('li')
+  const animalAge = document.createElement('ul')
+  const animalName = document.createElement('ul')
+  const animalBreed = document.createElement('ul')
+  const animalGender = document.createElement('ul')
+  const animalSize = document.createElement('ul')
   const animalImg = document.createElement('img')
 
   animalAge.textContent = "Age: " + animal.age
@@ -59,7 +59,7 @@ function renderAnimalInfo(animal) {
     //mouseover event for animal Images (remember to change image)
 animalImg.addEventListener('mouseover', () => {
     animalImg.src = "src/Photos/adopt image.png";
-    console.log('event successful')
+    // console.log('event successful')
 
     })} 
 
@@ -91,17 +91,20 @@ newDogForm.addEventListener('submit', function (e) {
   //resets form once you hit submit info
   newDogForm.reset();
 
-/*
-  const darkModeButton = document.getElementById('dark-mode')
-  const mainColumn = document.querySelector('.main-column')
+  //light/dark toggle function
+//  function lightDarkMode() {
+//     let button = document.getElementsByClassName('dark-mode')
 
-  darkModeButton.addEventListener('click', function () {
-  // Toggle the dark mode class on the main column
-  mainColumn.classList.toggle('dark-mode')
+//     button.addEventListener('click', () => {
+//         // button.lightDark.toggle('dark-mode')
+//         console.log("i was clicked")
+//     })
+   
+//   }
 
 })
-*/
-})
+
+
   //Don't need POST REQUEST FOR PHASE-1 PROJECT
   // Fetch request to post a new dog to the webpage (API) using the submitted info:
   // You can uncomment and modify this code according to your needs
