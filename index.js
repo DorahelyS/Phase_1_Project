@@ -2,7 +2,7 @@
 /* Constant variables */
 const animalList = document.getElementById("animal-list")
 const animalImgsUrl = "http://localhost:3000/animals"
-const newDogForm = document.getElementById("new-pet");
+const newUserForm = document.getElementById("new-user");
 const dogImage = document.getElementById("dog-image");
 
 fetch('https://api.petfinder.com/v2/oauth2/token', {
@@ -29,7 +29,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
       .then(res => res.json())
       .then(animals => {
         animals.animals.forEach(animal => {
-          //console.log(animal)
+          console.log(animal)
           renderAnimalInfo(animal)
         })
       })
@@ -71,33 +71,25 @@ animalImg.addEventListener('mouseout', () => {
 }
 
 
-newDogForm.addEventListener('submit', function (e) {
+newUserForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  const newDogId = document.getElementById("dog-id").value
-  const newDogName = document.getElementById("dog-name").value
-  const newDogBreed = document.getElementById("dog-breed").value
-  const newDogAge = document.getElementById("dog-age").value
-  const newDogGender = document.getElementById("dog-gender").value
-  const newDogSize = document.getElementById("dog-size").value
-  const newDogImage = document.getElementById("dog-image").value
+  //const newDogId = document.getElementById("dog-id").value
+  //const newDogName = document.getElementById("dog-name").value
+  //const newDogBreed = document.getElementById("dog-breed").value
+  //const newDogAge = document.getElementById("dog-age").value
+  //const newDogGender = document.getElementById("dog-gender").value
+  //const newDogSize = document.getElementById("dog-size").value
+  //const newDogImage = document.getElementById("dog-image").value
 
-  const newDogInfo = {
-    "newDogName": newDogName, "newDogImage": newDogImage, "newDogId": newDogId, "newDogBreed": newDogBreed, "newDogAge": newDogAge, "newDogGender": newDogGender, "newDogSize": newDogSize
-  }
+  //const newDogInfo = {
+   // "newDogName": newDogName, "newDogImage": newDogImage, "newDogId": newDogId, "newDogBreed": newDogBreed, "newDogAge": newDogAge, "newDogGender": newDogGender, "newDogSize": newDogSize
+  //}
 
   //dialogue box when you submit your dogs info
   window.alert("Thank you for submitting your info!");
 
   //resets form once you hit submit info
-  newDogForm.reset();
+  newUserForm.reset();
 
 });
 
-
-
-//event listeners
-//eventlistener1: Submit listener (already done)
-
-//eventlistener2: key down listener for the dark mode button
-
-//eventlistener3: click listener for dialog box once dog info is submitted
